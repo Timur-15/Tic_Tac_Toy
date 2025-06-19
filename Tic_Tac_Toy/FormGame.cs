@@ -15,6 +15,7 @@ namespace Tic_Tac_Toy
         private readonly GameLogic gameLogic;
         private readonly GameRenderer gameRenderer;
 
+
         public FormGame()
         {
             InitializeComponent();
@@ -38,6 +39,7 @@ namespace Tic_Tac_Toy
             if (gameLogic.CheckWin())
             {
                 MessageBox.Show($"Победа {gameLogic.CurrentPlayerName}!");
+                GameHistory.AddWinner($"Победа {gameLogic.CurrentPlayerName}!");
                 gameLogic.Reset();
                 gameRenderer.UpdateGrid();
                 gameRenderer.UpdateTurnLabel(labelTurn);
@@ -64,19 +66,22 @@ namespace Tic_Tac_Toy
         }
 
 
+
         private void FormGame_Load(object sender, EventArgs e)
         {
           
         }
-
-       
-
-        
 
         private void buttonDelete_Click(object sender, EventArgs e)
         {
             FormStats Stats = new FormStats();
             Stats.ShowDialog();
         }
+
+        private void buttonClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
+

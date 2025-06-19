@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataGridViewGame = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -36,6 +36,7 @@
             this.buttonClear = new System.Windows.Forms.Button();
             this.labelTurn = new System.Windows.Forms.Label();
             this.buttonDelete = new System.Windows.Forms.Button();
+            this.buttonClose = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewGame)).BeginInit();
             this.SuspendLayout();
             // 
@@ -50,14 +51,14 @@
             this.Column1,
             this.Column2,
             this.Column3});
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewGame.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewGame.DefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridViewGame.GridColor = System.Drawing.SystemColors.ControlText;
             this.dataGridViewGame.Location = new System.Drawing.Point(299, 121);
             this.dataGridViewGame.Name = "dataGridViewGame";
@@ -91,7 +92,7 @@
             this.buttonClear.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.buttonClear.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonClear.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.buttonClear.Location = new System.Drawing.Point(747, 121);
+            this.buttonClear.Location = new System.Drawing.Point(756, 74);
             this.buttonClear.Name = "buttonClear";
             this.buttonClear.Size = new System.Drawing.Size(140, 36);
             this.buttonClear.TabIndex = 1;
@@ -115,13 +116,26 @@
             this.buttonDelete.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.buttonDelete.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonDelete.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.buttonDelete.Location = new System.Drawing.Point(905, 121);
+            this.buttonDelete.Location = new System.Drawing.Point(902, 74);
             this.buttonDelete.Name = "buttonDelete";
-            this.buttonDelete.Size = new System.Drawing.Size(140, 36);
+            this.buttonDelete.Size = new System.Drawing.Size(184, 36);
             this.buttonDelete.TabIndex = 3;
-            this.buttonDelete.Text = "Статистика";
+            this.buttonDelete.Text = "Статистика игр";
             this.buttonDelete.UseVisualStyleBackColor = false;
             this.buttonDelete.Click += new System.EventHandler(this.buttonDelete_Click);
+            // 
+            // buttonClose
+            // 
+            this.buttonClose.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.buttonClose.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonClose.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.buttonClose.Location = new System.Drawing.Point(756, 116);
+            this.buttonClose.Name = "buttonClose";
+            this.buttonClose.Size = new System.Drawing.Size(140, 36);
+            this.buttonClose.TabIndex = 4;
+            this.buttonClose.Text = "Выход";
+            this.buttonClose.UseVisualStyleBackColor = false;
+            this.buttonClose.Click += new System.EventHandler(this.buttonClose_Click);
             // 
             // FormGame
             // 
@@ -129,6 +143,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.CornflowerBlue;
             this.ClientSize = new System.Drawing.Size(1251, 668);
+            this.Controls.Add(this.buttonClose);
             this.Controls.Add(this.buttonDelete);
             this.Controls.Add(this.labelTurn);
             this.Controls.Add(this.buttonClear);
@@ -151,6 +166,7 @@
         private System.Windows.Forms.Button buttonClear;
         private System.Windows.Forms.Label labelTurn;
         private System.Windows.Forms.Button buttonDelete;
+        private System.Windows.Forms.Button buttonClose;
     }
 }
 

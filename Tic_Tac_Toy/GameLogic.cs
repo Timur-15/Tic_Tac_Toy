@@ -33,6 +33,7 @@ namespace Tic_Tac_Toy
             return true;
         }
 
+
         public bool CheckWin()
         {
             // Проверка строк и столбцов

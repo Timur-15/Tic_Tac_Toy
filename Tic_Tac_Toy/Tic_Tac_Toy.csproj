@@ -61,6 +61,7 @@
     <Compile Include="FormStats.Designer.cs">
       <DependentUpon>FormStats.cs</DependentUpon>
     </Compile>
+    <Compile Include="GameHistory.cs" />
     <Compile Include="GameLogic.cs" />
     <Compile Include="GameRenderer.cs" />
     <Compile Include="Program.cs" />
@@ -80,6 +81,13 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="Properties\DataSources\FormGame.datasource" />
+    <None Include="Properties\DataSources\FormStats.datasource" />
+    <None Include="Properties\DataSources\GameLogic.datasource" />
+    <None Include="Properties\DataSources\GameRenderer.datasource" />
+    <None Include="Properties\DataSources\Program.datasource" />
+    <None Include="Properties\DataSources\Tic_Tac_Toy.Properties.Resources.datasource" />
+    <None Include="Properties\DataSources\Tic_Tac_Toy.Properties.Settings.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
